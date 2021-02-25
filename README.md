@@ -2,7 +2,7 @@
 
 SleepPrintNet: A Multivariate Multimodal Neural Network based on Physiological Time-series for Automatic Sleep Staging
 
-![image-20210224224632011](README.assets/model.png)
+![model](README.assets/model.png)
 
 The SleepPrintNet is made up of four independent modules: EEG temporal feature extraction module, EEG spectral-spatial feature extraction module, EOG feature extraction module, and EMG feature extraction module. After extracting the corresponding features from each module, we use a feature fusion layer to fuse all the features, and finally obtain the classification results through a classification layer. 
 

@@ -46,8 +46,7 @@ class SeqDataLoader():
 
         # Divide Training & Testing Sets
         r_permute = np.random.permutation(len(datafiles))
-        filename = os.path.join(
-            self.data_dir, "r_permute{}.npz".format(len(datafiles)))
+        filename = os.path.join("r_permute{}.npz".format(len(datafiles)))
         if (os.path.isfile(filename)):
             with np.load(filename) as f:
                 print("already exist")

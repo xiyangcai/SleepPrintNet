@@ -25,6 +25,18 @@ These are the source code of SleepPrintNet.
 
 # Usage
 
+- Preprocess
+
+  - Prepare data (raw signals) in `data_dir`
+    - Files name: 01-03-00**XX**-Data.npy, where **XX** denotes subject ID.
+    - Tensor shape: **[sample, channel=26, length]**, where channel 0 is ECG channel, 1-20 are EEG channels, 21-23 are EMG channels, 24-25 are EOG channels.
+  - Modify directory
+    - Modify `data_dir` and `label_dir`  in `run_preprocess.py` accordingly.
+    - (Optional) Modify `output_dir` in  `run_preprocess.py`.
+  - Run preprocess program
+    - `cd preprocess`
+    - `python run_preprocess.py`
+
 - Command Line Parameters
 
   - Training

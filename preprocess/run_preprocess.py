@@ -18,7 +18,6 @@ output_dir = '../data/'
 output_dir_fre_spa = os.path.join(output_dir, 'fre_spa')
 output_dir_EEG_EOG = os.path.join(output_dir, 'EEG_EOG')
 output_dir_EMG = os.path.join(output_dir, 'EMG')
-output_dir_label = os.path.join(output_dir, 'label')
 
 def GenerateTopographic(data, sub_id):
     '''
@@ -55,8 +54,6 @@ def main():
         os.mkdir(output_dir_EEG_EOG)
     if os.path.exists(output_dir_EMG) is not True:
         os.mkdir(output_dir_EMG)
-    if os.path.exists(output_dir_label) is not True:
-        os.mkdir(output_dir_label)
 
     for sub_id in range(1, 65):
         print(f'Subject {sub_id}')

@@ -15,7 +15,7 @@ These are the source code of SleepPrintNet.
 # Requirements
 
 - Python 3.6.5
-- CUDA 10.1
+- CUDA 9.0
 - CuDNN 7.5.1
 - numpy==1.15.0
 - sklearn==0.19.1

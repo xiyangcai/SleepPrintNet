@@ -65,7 +65,7 @@ These are the source code of SleepPrintNet.
     - Label**SubID**.npy: (numOfSamples, ) 
   - fre_spa
     - Data**SubID**.npy : (numOfSamples, numOfFreqBands, height, width, 1) -> (numOfSamples, 5, 16, 16, 1)
-      - numOfFreqBands: 5 frequency bands ($\delta, \theta, \alpha, \beta, \gamma$)
+      - numOfFreqBands: 5 frequency bands
       - height, width: 16 px $\times$ 16 px
     - Label**SubID**.npy: (numOfSamples, ) 
   
